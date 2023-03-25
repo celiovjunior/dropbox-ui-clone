@@ -54,13 +54,13 @@ export const Content = styled.div`
   > h2 {
     font-size: var(--heading-font-size);
     color: var(--logo-color);
-    max-width: var(--contnent-width);
+    max-width: var(--content-width);
   }
 
   > p {
     margin-top: 20px;
     font-size: 16px;
-    color: var(--logo-color);
+    color: var(--text-color);
     max-width: var(--contnent-width)
   }
 

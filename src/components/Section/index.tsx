@@ -7,6 +7,8 @@ interface Props {
 }
 
 export default function Section ({variant, title, description}: Props) {
+  const buttonVariant = Math.round(Math.random())
+
   return (
     <Container className={variant}>
       <HeaderWrapper>
@@ -15,7 +17,7 @@ export default function Section ({variant, title, description}: Props) {
             <DropboxLogo />
             <span>Dropbox</span>
           </h1>
-          <button>Interagir</button>
+          <button>{ buttonVariant === 0 ? 'Acessar' : 'Interagir' }</button>
         </Header>
       </HeaderWrapper>
       <Content>
