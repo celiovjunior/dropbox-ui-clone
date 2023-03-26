@@ -2,6 +2,7 @@ import Section from "./components/Section"
 import GlobalStyles from "./styles/GlobalStyles"
 import data from "./data"
 import SideMenu from "./components/SideMenu"
+import MenuForm from "./components/MenuForm"
 
 function App() {
   return (
@@ -32,7 +33,9 @@ function App() {
         description={data[4].description}
       />
 
-      <SideMenu />
+      <SideMenu>
+        <MenuForm />
+      </SideMenu>
       <GlobalStyles />
     </>
   )

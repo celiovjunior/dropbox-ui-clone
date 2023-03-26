@@ -1,9 +1,13 @@
-import { useEffect, useState } from "react"
+import { ReactNode, useEffect, useState } from "react"
 import { Container } from "./styles"
 
 const scrollThreshold = 300;
 
-export default function SideMenu({ children = '' }) {
+interface Props {
+  children?: ReactNode
+}
+
+export default function SideMenu({ children }: Props) {
   const [scrollY, setScrollY] = useState(0);
   const [isActive, setIsActive] = useState(false);
 
