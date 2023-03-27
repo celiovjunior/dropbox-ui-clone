@@ -1,6 +1,10 @@
 import { Container, DropboxLogo, Form, Navigation } from "./styles";
 
 export default function MenuForm() {
+  function handleToggle() {
+    if (window.toggleActiveMenu) window.toggleActiveMenu();
+  }
+
   return (
     <Container>
       <Navigation>
@@ -9,7 +13,7 @@ export default function MenuForm() {
           <span>Dropbox</span>
         </h1>
 
-        <button className="action--close">✕</button>
+        <button className="action--close" onClick={handleToggle}>✕</button>
       </Navigation>
 
       <Form>

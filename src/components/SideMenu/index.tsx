@@ -3,6 +3,7 @@ import { Container } from "./styles"
 
 const scrollThreshold = 300;
 
+// will set the function in the element window
 declare global {
   interface Window {
     toggleActiveMenu: (() => void) | undefined
