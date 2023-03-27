@@ -3,6 +3,12 @@ import { Container } from "./styles"
 
 const scrollThreshold = 300;
 
+declare global {
+  interface Window {
+    toggleActiveMenu: (() => void) | undefined
+  }
+}
+
 interface Props {
   children?: ReactNode
 }
@@ -28,6 +34,12 @@ export default function SideMenu({ children }: Props) {
   ];
 
   const className = classes.join(' ').trim();
+
+  function toggleActiveMenu() {
+    setIsActive(!isActive)
+  }
+
+  window.toggleActiveMenu = toggleActiveMenu
 
   return(
     <Container className={className}>
