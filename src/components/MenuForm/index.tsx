@@ -1,5 +1,4 @@
-import { DropboxLogo } from "../Section/styles";
-import { Container, Form, Navigation } from "./styles";
+import { Container, DropboxLogo, Form, Navigation } from "./styles";
 
 export default function MenuForm() {
   return (
@@ -17,10 +16,12 @@ export default function MenuForm() {
         <span className="title">Registre-se</span>
         <span className="subtitle">Preencha o formulário abaixo</span>
       
-        <input type="text" placeholder="Name" />
-        <input type="text" placeholder="Surname" />
+        <input type="text" placeholder="Nome" />
+        <input type="text" placeholder="Sobrenome" />
         <input type="email" placeholder="E-mail" />
-        <input type="password" placeholder="Password" />
+        <input type="password" placeholder="Senha" />
+
+        <button>Proceed</button>
 
         <span className="terms">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque.
