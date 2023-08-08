@@ -6,7 +6,7 @@ interface Props {
   description: string;
 }
 
-export default function Section ({variant, title, description}: Props) {
+export default function Section ({ variant, title, description }: Props) {
   const buttonVariant = Math.round(Math.random())
 
   function handleToggle() {
